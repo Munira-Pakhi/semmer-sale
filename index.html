@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Summer Sale</title>
+    <!-- tailwindCss daisyUI -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@3.5.1/dist/full.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- icon -->
+    <script
+      src="https://kit.fontawesome.com/f056a62cc9.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <style>
+      .work-sans {
+        font-family: "Work Sans", sans-serif;
+      }
+    </style>
+  </head>
+  <body class="work-sans">
+    <!-- header section -->
+    <header>
+      <section
+        class="flex lg:flex-row flex-col bg-[#F9F6E2;] px-5 lg:px-60 md:px-28 gap-3 lg:gap-10"
+      >
+        <div class="flex-1 lg:my-52 text-center mt-10">
+          <h3 class="font-medium text-xl text-center">---SALE FEVER---</h3>
+          <h1 class="font-bold text-3xl md:text-5xl mt-8 mb-8 lg:mb-14">
+            Purchase TK 200 or above & get
+            <span class="text-[#E527B2]">20% off</span>
+          </h1>
+          <div class="flex gap-2 justify-center">
+            <p class="font-medium text-base mt-2">Use Promo Code</p>
+            <button
+              class="font-semibold text-lg text-white bg-[#E527B2] rounded-lg py-2 px-4"
+            >
+              SELL200
+            </button>
+          </div>
+        </div>
+        <div class="flex-1 lg:my-20 my-5">
+          <img src="./images/Summer 1.png" alt="" />
+        </div>
+      </section>
+    </header>
+    <main class="bg-[#F8F8F8]">
+      <section
+        class="max-w-screen-xl mx-auto px-8 md:px-16 py-20 flex flex-col lg:flex-row gap-10"
+      >
+        <div>
+          <div>
+            <h3 class="text-2xl font-semibold text-[#111111] mb-12">
+              Kitchenware
+            </h3>
+            <div
+              class="grid grid-flow-row md:grid-cols-2 lg:grid-flow-col gap-5"
+            >
+              <div class="bg-white shadow-xl rounded-lg">
+                <figure class="mt-5 mx-5">
+                  <img
+                    src="./images/prod1.png"
+                    alt=""
+                    class="bg-[#1111110D] px-28 md:px-24 lg:px-16 py-10 md:py-14 lg:py-14"
+                  />
+                </figure>
+                <div class="card-body mb-8" onclick="handleClick(this)">
+                    <div class="text-center">
+                      <i class="fa-solid fa-star text-[#FFC107]"></i>
+                      <i class="fa-solid fa-star text-[#FFC107]"></i>
+                      <i class="fa-solid fa-star text-[#FFC107]"></i>
+                      <i class="fa-regular fa-star text-[#FFC107]"></i>
+                      <i class="fa-regular fa-star text-[#FFC107]"></i>
+                    </div>
+                  <h2 class="font-semibold text-xl text-[#111111] text-center">
+                    K. Accessories
+                  </h2>
+                  <h5 class="text-[#11111180] text-center">
+                    <span>39.00</span> TK
+                  </h5>
+                </div>
+              </div>
+              <div class="bg-white shadow-xl rounded-lg">
+                <figure class="mt-5 mx-5">
+                  <img
+                    src="./images/prod2.png"
+                    alt=""
+                    class="bg-[#1111110D] px-28 md:px-24 lg:px-10 py-10 md:py-16 lg:py-12"
+                  />
+                </figure>
+                <div class="card-body mb-8" onclick="handleClick(this)">
+                  <div class="text-center">
+                    <i class="fa-regular fa-star text-[#FFC107]"></i>
+                    <i class="fa-regular fa-star text-[#FFC107]"></i>
+                    <i class="fa-regular fa-star text-[#FFC107]"></i>
+                    <i class="fa-regular fa-star text-[#FFC107]"></i>
+                    <i class="fa-regular fa-star text-[#FFC107]"></i>
+                  </div>
+                  <h2 class="font-semibold text-xl text-[#111111] text-center">
+                    K. Accessories
+                  </h2>
+                  <h5 class="text-[#11111180] text-center">
+                    <span>25.00</span> TK
+                  </h5>
+                </div>
+              </div>
+              <div class="bg-white shadow-xl rounded-lg">
+                <figure class="mt-5 mx-5">
+                  <img
+                    src="./images/prod3.png"
+                    alt="Shoes"
+                    class="lg:h-52 lg:w-[215px] bg-[#1111110D] px-28 md:px-24 lg:px-10 py-10 md:py-14 lg:py-5"
+                  />
+                </figure>
+                <div class="card-body mb-b" onclick="handleClick(this)">
+                  <div class="text-center">
+                    <i class="fa-solid fa-star text-[#FFC107]"></i>
+                    <i class="fa-solid fa-star text-[#FFC107]"></i>
+                    <i class="fa-solid fa-star text-[#FFC107]"></i>
+                    <i class="fa-solid fa-star text-[#FFC107]"></i>
+                    <i class="fa-regular fa-star text-[#FFC107]"></i>
+                  </div>
+                  <h2 class="font-semibold text-xl text-[#111111] text-center">
+                    Home Cooker
+                  </h2>
+                  <h5 class="text-[#11111180] text-center">
+                    <span>49.00</span> TK
+                  </h5>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div>
+            <h3 class="text-2xl font-semibold text-[#111111] mb-12 mt-20">
+              Sportswear
+            </h3>
+            <div
+              class="grid grid-flow-row md:grid-cols-2 lg:grid-flow-col gap-5"
+            >
+              <div class="bg-white shadow-xl rounded-lg">
+                <figure class="mt-5 mx-5">
+                  <img
+                    src="./images/prod4.png"
+                    alt=""
+                    class="bg-[#1111110D] px-28 md:px-24 lg:px-10 py-16 md:py-20 lg:py-12"
+                  />
+                </figure>
+                <div class="card-body mb-8" onclick="handleClick(this)">
+                  <div class="text-center">
+                    <i class="fa-solid fa-star text-[#FFC107]"></i>
+                    <i class="fa-solid fa-star text-[#FFC107]"></i>
+                    <i class="fa-regular fa-star text-[#FFC107]"></i>
+                    <i class="fa-regular fa-star text-[#FFC107]"></i>
+                    <i class="fa-regular fa-star text-[#FFC107]"></i>
+                  </div>
+                  <h2 class="font-semibold text-xl text-[#111111] text-center">
+                    Sports Back Cap
+                  </h2>
+                  <h5 class="text-[#11111180] text-center">
+                    <span>49.00</span> TK
+                  </h5>
+                </div>
+              </div>
+              <div class="bg-white shadow-xl rounded-lg">
+                <figure class="mt-5 mx-5">
+                  <img
+                    src="./images/prod5.png"
+                    alt=""
+                    class="bg-[#1111110D] px-28 md:px-24 lg:px-16 py-10 md:py-16 lg:py-12"
+                  />
+                </figure>
+                <div class="card-body mb-8" onclick="handleClick(this)">
+                  <div class="text-center">
+                    <i class="fa-solid fa-star text-[#FFC107]"></i>
+                    <i class="fa-solid fa-star text-[#FFC107]"></i>
+                    <i class="fa-solid fa-star text-[#FFC107]"></i>
+                    <i class="fa-solid fa-star text-[#FFC107]"></i>
+                    <i class="fa-regular fa-star text-[#FFC107]"></i>
+                  </div>
+                  <h2 class="font-semibold text-xl text-[#111111] text-center">
+                    Full Jersey Set
+                  </h2>
+                  <h5 class="text-[#11111180] text-center">
+                    <span>69.00</span> TK
+                  </h5>
+                </div>
+              </div>
+              <div class="bg-white shadow-xl rounded-lg">
+                <figure class="mt-5 mx-5">
+                  <img
+                    src="./images/prod6.png"
+                    alt="Shoes"
+                    class="lg:h-52 lg:w-[215px] bg-[#1111110D] px-20 md:px-24 lg:px-10 py-10 md:py-14 lg:py-12"
+                  />
+                </figure>
+                <div class="card-body mb-8" onclick="handleClick(this)">
+                  <div class="text-center">
+                    <i class="fa-solid fa-star text-[#FFC107]"></i>
+                    <i class="fa-solid fa-star text-[#FFC107]"></i>
+                    <i class="fa-solid fa-star text-[#FFC107]"></i>
+                    <i class="fa-regular fa-star text-[#FFC107]"></i>
+                    <i class="fa-regular fa-star text-[#FFC107]"></i>
+                  </div>
+                  <h2 class="font-semibold text-xl text-[#111111] text-center">
+                    Sports cates
+                  </h2>
+                  <h5 class="text-[#11111180] text-center">
+                    <span>159.00</span> TK
+                  </h5>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div>
+            <h3 class="text-2xl font-semibold text-[#111111] mb-12 mt-20">
+              Furniture
+            </h3>
+            <div
+              class="grid grid-flow-row md:grid-cols-2 lg:grid-flow-col gap-5"
+            >
+              <div class="bg-white shadow-xl rounded-lg">
+                <figure class="mt-5 mx-5">
+                  <img
+                    src="./images/prod7.png"
+                    alt=""
+                    class="bg-[#1111110D] px-24 md:px-16 lg:px-10 py-16 md:py-9 lg:py-8"
+                  />
+                </figure>
+                <div class="card-body mb-8" onclick="handleClick(this)">
+                  <div class="text-center">
+                    <i class="fa-solid fa-star text-[#FFC107]"></i>
+                    <i class="fa-solid fa-star text-[#FFC107]"></i>
+                    <i class="fa-solid fa-star text-[#FFC107]"></i>
+                    <i class="fa-solid fa-star text-[#FFC107]"></i>
+                    <i class="fa-regular fa-star text-[#FFC107]"></i>
+                  </div>
+                  <h2 class="font-semibold text-xl text-[#111111] text-center">
+                    Single Relax Chair
+                  </h2>
+                  <h5 class="text-[#11111180] text-center">
+                    <span>185.00</span> TK
+                  </h5>
+                </div>
+              </div>
+              <div class="bg-white shadow-xl rounded-lg">
+                <figure class="mt-5 mx-5">
+                  <img
+                    src="./images/prod8.png"
+                    alt=""
+                    class="bg-[#1111110D] px-28 md:px-24 lg:px-16 py-10 md:py-16 lg:py-12"
+                  />
+                </figure>
+                <div class="card-body mb-8" onclick="handleClick(this)">
+                  <div class="text-center">
+                    <i class="fa-solid fa-star text-[#FFC107]"></i>
+                    <i class="fa-solid fa-star text-[#FFC107]"></i>
+                    <i class="fa-solid fa-star text-[#FFC107]"></i>
+                    <i class="fa-solid fa-star text-[#FFC107]"></i>
+                    <i class="fa-solid fa-star text-[#FFC107]"></i>
+                  </div>
+                  <h2 class="font-semibold text-xl text-[#111111] text-center">
+                    Children play
+                  </h2>
+                  <h5 class="text-[#11111180] text-center">
+                    <span>299.00</span> TK
+                  </h5>
+                </div>
+              </div>
+              <div class="bg-white shadow-xl rounded-lg">
+                <figure class="mt-5 mx-5">
+                  <img
+                    src="./images/prod9.png"
+                    alt="Shoes"
+                    class="lg:h-52 lg:w-[215px] bg-[#1111110D] px-20 md:px-16 lg:px-10 py-10 md:py-14 lg:py-16"
+                  />
+                </figure>
+                <div class="card-body mb-8" onclick="handleClick(this)">
+                  <div class="text-center">
+                    <i class="fa-solid fa-star text-[#FFC107]"></i>
+                    <i class="fa-solid fa-star text-[#FFC107]"></i>
+                    <i class="fa-solid fa-star text-[#FFC107]"></i>
+                    <i class="fa-solid fa-star text-[#FFC107]"></i>
+                    <i class="fa-solid fa-star text-[#FFC107]"></i>
+                  </div>
+                  <h2 class="font-semibold text-xl text-[#111111] text-center">
+                    Flexible Sofa
+                  </h2>
+                  <h5 class="text-[#11111180] text-center">
+                    <span>339.00</span> TK
+                  </h5>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- amount -->
+        <div>
+          <div class="bg-white shadow-xl mt-20 roun">
+            <div class="card-body">
+              <h2 class="card-title">Have coupon?</h2>
+              <div  class="flex">
+                <input id="text-field"
+                  type="text"
+                  placeholder="Coupon code"
+                  class="input input-bordered relative w-full"/>
+                <button id="btn-apply" class="btn bg-[#E527B2] py-1" disabled onclick="btnHandel(this)">Apply</button>
+              </div>
+            </div>
+          </div>
+          <div class="bg-white shadow-xl mt-10 p-5 relative">
+            <div class="py-5" id="selected-items"></div>
+            <hr />
+            <div class="card-body">
+              <h2 class="font-medium text-base">
+                Total price:  <span id="total-price"  class="text-[#11111180] text-sm">00.00</span>
+                <span class="text-[#11111180] text-sm">TK</span>
+              </h2>
+              <h2 class="font-medium text-base">
+                Discount:  <span id="discount" class="text-[#11111180] text-sm">00.00</span> <span class="text-[#11111180] text-sm">TK</span>
+              </h2>
+              <h2 class="font-medium text-base">
+                Total:  <span id="total" class="text-[#11111180] text-sm">00.00</span> <span class="text-[#11111180] text-sm">TK</span>
+              </h2>
+            </div>
+            <hr />
+            <div class="py-5"></div>
+            <!-- Open the modal using ID.showModal() method -->
+            <button id="make-purchase"
+              class="btn bg-[#E527B2] text-white px-4 lg:px-14 absolute " 
+              onclick="my_modal_1.showModal()" disabled>
+              Make Purchase
+            </button>
+            <dialog id="my_modal_1" class="modal">
+              <form method="dialog" class="modal-box">
+                <img src="./images/congo.png" alt="" class="px-36" />
+                <h3 class="font-bold text-3xl text-center mt-5">
+                  Congratulations
+                </h3>
+                <p class="py-4 text-center text-gray-400">
+                  Your Purchase the product
+                </p>
+                <div class="modal-action">
+                  <!-- if there is a button in form, it will close the modal -->
+                  <button onclick="document.location.reload()" class="btn mx-44 bg-[#E527B2] text-white">
+                    Go Home
+                  </button>
+                </div>
+              </form>
+            </dialog>
+          </div>
+        </div>
+      </section>
+    </main>
+    <script src="js/button.js"></script>
+    <script src="js/discount.js"></script>
+  </body>
+</html>
